@@ -1,0 +1,195 @@
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
+
+/* ===== Interview-grade customer storefront ===== */
+.storefront-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;min-height:360px;margin:0 0 22px;padding:38px 42px;border-radius:28px;background:radial-gradient(circle at 82% 18%,rgba(187,247,208,.5),transparent 32%),linear-gradient(120deg,#0b3d24 0%,#14532d 52%,#166534 100%);box-shadow:0 24px 70px rgba(20,83,45,.22);isolation:isolate}
+.storefront-hero:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-120px;bottom:-210px;background:rgba(255,255,255,.08);filter:blur(2px);z-index:-1}
+.storefront-copy{align-self:center;position:relative;z-index:2;max-width:650px}.storefront-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid rgba(220,252,231,.25);background:rgba(255,255,255,.09);color:#dcfce7;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;animation:fadeUp .6s ease both}
+.storefront-copy h2{margin:16px 0 12px;color:#fff;font-family:"Plus Jakarta Sans",Inter,sans-serif;font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-.045em;animation:fadeUp .65s ease .08s both}.storefront-copy h2 span{color:#bbf7d0}.storefront-copy p{max-width:540px;margin:0;color:#d1fae5;font-size:14px;line-height:1.75;animation:fadeUp .65s ease .15s both}
+.storefront-actions{display:flex;align-items:center;gap:18px;margin-top:24px;animation:fadeUp .65s ease .22s both}.storefront-cta{background:#fff!important;color:#14532d!important;box-shadow:0 12px 28px rgba(0,0,0,.16)}.storefront-cta:hover{background:#f0fdf4!important;transform:translateY(-2px)}.storefront-trust{display:flex;align-items:center;gap:7px;color:#dcfce7;font-size:10px;font-weight:800}
+.storefront-art{position:relative;display:grid;place-items:center;min-height:300px}.storefront-art img{position:relative;z-index:2;width:min(310px,90%);height:310px;object-fit:contain;filter:drop-shadow(0 26px 26px rgba(0,0,0,.22));animation:storeFloat 5.5s ease-in-out infinite}.art-glow{position:absolute;width:250px;height:250px;border-radius:50%;background:rgba(220,252,231,.25);filter:blur(8px);animation:glowPulse 4s ease-in-out infinite}.floating-chip{position:absolute;z-index:3;padding:9px 12px;border-radius:13px;background:rgba(255,255,255,.94);color:#14532d;font-size:10px;font-weight:900;box-shadow:0 14px 28px rgba(0,0,0,.18);backdrop-filter:blur(8px)}.chip-one{top:18%;left:3%;animation:chipFloat 4s ease-in-out infinite}.chip-two{right:2%;bottom:17%;animation:chipFloat 4.8s ease-in-out .5s infinite reverse}
+@keyframes storeFloat{0%,100%{transform:translateY(4px) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}@keyframes chipFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}@keyframes glowPulse{50%{transform:scale(1.1);opacity:.7}}
+@media(max-width:850px){.storefront-hero{grid-template-columns:1fr;padding:28px 24px}.storefront-art{min-height:230px;order:-1}.storefront-art img{height:220px}.floating-chip{font-size:9px}.chip-one{left:10%}.chip-two{right:8%}.storefront-copy h2{font-size:34px}.storefront-actions{flex-wrap:wrap}}
+@media(max-width:520px){.storefront-hero{border-radius:21px;padding:23px 20px}.storefront-copy p{font-size:12px}.storefront-trust{width:100%}.storefront-art{min-height:190px}.storefront-art img{height:185px}.floating-chip{padding:7px 9px}}
