@@ -173,11 +173,11 @@ Recommended assessment deployment:
 
 See [`DEPLOYMENT.md`](./DEPLOYMENT.md) for exact settings and environment variables.
 
-## 🎥 Interview demo
+## 🎥  Demo
 
-See [`DEMO_SCRIPT.md)](./DEMO_SCRIPT.md`)
+See [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md)
 
-The 3–5 minute flow is:
+The 5 - 20  minute flow is:
 
 **Customer → Checkout → Staff order lifecycle → Manager analytics → Admin RBAC/audit → architecture/security.**
 
@@ -185,16 +185,16 @@ The 3–5 minute flow is:
 
 AI assistance was used to accelerate implementation, code review, UI construction, debugging and security/business-rule checks. The resulting implementation was reviewed against the assessment requirements and project structure.
 
-## 📋 Assessment submission checklist
+## 📋 checklist
 
-- [ ] GitHub repository
-- [ ] Public frontend URL
-- [ ] Public backend/API URL
-- [ ] README.md
-- [ ] SECURITY.md
-- [ ] `.env.example`
-- [ ] Test credentials
-- [ ] 5–10 minute explanation/demo video
-- [ ] Deployment evidence
-- [ ] Smoke-test evidence
-- [ ] AI usage disclosure
+- [x] GitHub repository
+- [x] Public frontend URL
+- [x] Public backend/API URL
+- [x] README.md
+- [x] SECURITY.md
+- [x] `.env.example`
+- [x] Test credentials
+- [x] 5–10 minute explanation/demo video
+- [x] Deployment evidence
+- [x] Smoke-test evidence
+- [x] AI usage disclosure
