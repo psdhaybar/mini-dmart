@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BarChart3, Package, AlertTriangle, ClipboardList, RotateCcw, Plus, Pencil, Trash2 } from "lucide-react";
+import { BarChart3, Package, AlertTriangle, ClipboardList, RotateCcw, Plus, Pencil, Trash2, TrendingUp } from "lucide-react";
 import api from "../services/api";
 import AppShell from "../components/AppShell";
 import StatCard from "../components/StatCard";
